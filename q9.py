@@ -1,4 +1,4 @@
-reader = open('test_file.txt','r')
+reader = open('test.txt','r')
 lines = reader.readlines()
-for i in range (0,len(lines)):
-    print(lines[i][::-1])
+for i in range (len(lines)-1,-1,-1):
+    print(lines[i])
